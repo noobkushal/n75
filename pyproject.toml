@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jobpilot"
+version = "0.1.0"
+description = "Human-in-the-loop job hunting automation pipeline"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.8.2,<3",
+    "sqlalchemy>=2.0.30,<3",
+    "typer>=0.12.3,<1",
+    "ruamel.yaml>=0.18.10,<1",
+    "python-jobspy>=1.1.0,<2",
+    "requests>=2.31.0,<3",
+    "python-dotenv>=1.0.1,<2",
+    "tenacity>=9.0.0,<10",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2.2,<9",
+    "ruff>=0.5.6,<1",
+]
+
+[project.scripts]
+jobpilot = "jobpilot.cli:app"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

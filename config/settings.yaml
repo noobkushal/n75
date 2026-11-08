@@ -1,0 +1,19 @@
+jobs:
+  roles:
+    - "SOC Analyst"
+    - "Security Intern"
+    - "Pentest Intern"
+  cities:
+    - "Bengaluru"
+  location: "Bengaluru, India"
+  min_score: 75
+  max_jobs_per_run: 25
+
+llm:
+  provider: "gemini"
+  model: "gemini-2.0-flash"
+  temperature: 0.2
+  max_retries: 3
+
+database:
+  url: "sqlite:///jobpilot.db"

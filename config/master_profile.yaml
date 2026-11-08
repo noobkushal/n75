@@ -1,0 +1,27 @@
+candidate:
+  name: "Your Name"
+  location: "Bengaluru, India"
+  target_roles:
+    - "SOC Analyst"
+    - "Security Intern"
+    - "Pentest Intern"
+  summary: "Security-focused engineering graduate with hands-on experience in networking, Linux, Python, and cybersecurity tooling."
+  skills:
+    - "Python"
+    - "Linux"
+    - "Wireshark"
+    - "Nmap"
+    - "Burp Suite"
+    - "SQL"
+    - "CI/CD"
+    - "Git"
+  certifications: []
+  projects:
+    - name: "Home Lab Hardening"
+      description: "Set up a homelab with pfSense, IDS monitoring, and log analysis to learn incident response workflows."
+    - name: "Network Enumeration Toolkit"
+      description: "Built a Python-based toolkit to scan hosts and summarize open ports and services."
+  education:
+    degree: "Bachelor of Engineering / B.Tech"
+    field: "Computer Science / Information Security"
+    year: 2025
